@@ -11,7 +11,8 @@
 
 const fs = require('fs')
 const chalk = require('chalk')
-require('./lib/system/config')
+require('./lib/config')
+
 global.zApiKey = {// if this API key get expired then please go to https://www.fxacb-api.my.id and get a new api key.
        one: "zenzkey_998568986d"
 }
@@ -50,21 +51,16 @@ global.greet3 = "Good evening 🌆" // after 4 PM
 global.greet4 = "Good night 😴" // after 8:30 PM
 
 
-//------------ 🌟 Premium Users 🌟-------------\\
-global.sudo = ['916900******','91881107****']  // Co - Owners
-
-
 //--------------- Tip ----------------\\
 global.tip1 = `Type *${prefa}info* for more information....`
 global.tip2 = `Type *${prefa}settings* to commit changes in the bot.`
 global.tip3 = `If you got a bug or error, then please report to developer asap by *${prefa}report* command.`
 
 //--------------- Menu images ----------------\\
-global.nullImage = fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg')
-global.nullDoc = fs.readFileSync('./AnyaPikaMedia/theme/storemedia/Anya.xlsx')
-global.Menuimage = fs.readFileSync("./AnyaPikaMedia/theme/Menu/Menuimg.jpg") // Thumbnail for Dashboard
-global.thumnnaiIs = fs.readFileSync("./AnyaPikaMedia/theme/Menu/Menuimg2.jpeg")
-global.allmenuImg = fs.readFileSync('./AnyaPikaMedia/theme/Commandsimgs/Allmenu.jpg') // Thumbnail for Allmenu command 
+global.nullImage = fs.readFileSync('./AnyaPikaMedia/Anyatestpic.jpg')
+global.Menuimage = fs.readFileSync("./AnyaPikaMedia/Menuimg.jpg") // Thumbnail for Dashboard
+global.thumnnaiIs = fs.readFileSync("./AnyaPikaMedia/Menuimg2.jpeg")
+global.allmenuImg = fs.readFileSync('./AnyaPikaMedia/Allmenu.jpg') // Thumbnail for Allmenu command 
 
 global.mess = {
     success: 'Done ✅',
@@ -78,10 +74,7 @@ global.mess = {
     error: '```404 Error```',
     ban: `You're banned from using this bot!`,
     nsfw: 'This group is not *NSFW* enabled.',
-    banChat: 'This group is banned from using this bot, please contact owner to get unbanned.',
-//    set: 'english',
-    restart: 'The changes will take place after a restart, please wait for 30 secs...'
-
+    banChat: 'This group is banned from using this bot, please contact owner to get unbanned.'
 }
 
 
